@@ -1,0 +1,10 @@
+*
+!.oh-my-zsh/
+!.oh-my-zsh/*
+!.vim/after/ftplugin/go.vim
+!.gitconfig
+!.gitignore
+!.vimrc
+!.zshrc
+!LICENSE.md
+!README.md

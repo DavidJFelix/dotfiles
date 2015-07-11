@@ -1,0 +1,12 @@
+[user]
+	email = felix.davidj@gmail.com
+	name = David J Felix
+[core]
+	editor = vim
+	autocrlf = input
+[help]
+	autocorrect = 1
+[color]
+	ui = true
+[push]
+	default = simple
