@@ -1,6 +1,9 @@
 *
 !.oh-my-zsh/
 !.oh-my-zsh/*
+!.vim/
+!.vim/after/
+!.vim/after/ftplugin/
 !.vim/after/ftplugin/go.vim
 !.gitconfig
 !.gitignore
