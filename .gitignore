@@ -5,6 +5,7 @@
 !.vim/after/
 !.vim/after/ftplugin/
 !.vim/after/ftplugin/go.vim
+!.vim/after/ftplugin/clojure.vim
 !.gitconfig
 !.gitignore
 !.vimrc
