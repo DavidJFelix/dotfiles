@@ -6,6 +6,8 @@
 !.vim/after/ftplugin/
 !.vim/after/ftplugin/go.vim
 !.vim/after/ftplugin/clojure.vim
+!.vim/after/ftplugin/sls.vim
+!.vim/ftdetect/sls.vim
 !.gitconfig
 !.gitignore
 !.vimrc
