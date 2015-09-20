@@ -18,8 +18,7 @@ else
 fi
 
 printf "${BLUE}%s${NORMAL}\n" "Upgrading Oh My Zsh"
-cd "$ZSH"
-if git pull origin master && git subtree pull --prefix=.oh-my-zsh https://github.com/robbyrussell/oh-my-zsh master --squash
+if git pull origin master && git subtree pull --prefix=$ZSH https://github.com/robbyrussell/oh-my-zsh master --squash
 then
   printf '%s' "$GREEN"
   printf '%s\n' '         __                                     __   '
