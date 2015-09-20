@@ -31,6 +31,7 @@ then
   printf "${BLUE}%s\n" "Hooray! Oh My Zsh has been updated and/or is at the current version."
   printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on twitter: https://twitter.com/ohmyzsh"
   printf "${BLUE}${BOLD}%s${NORMAL}\n" "Get your Oh My Zsh swag at:  http://shop.planetargon.com/"
+  cd ~/
   git push origin master
 else
   printf "${RED}%s${NORMAL}\n" 'There was an error updating. Try again later?'
