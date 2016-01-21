@@ -11,6 +11,7 @@ To graft a git tree onto an existing directory:
 cd ~/
 git init
 git remote add origin https://github.com/davidjfelix/home
+git branch --set-upstream-to=origin/master
 git fetch --all
 git reset --hard origin/master
 ```
