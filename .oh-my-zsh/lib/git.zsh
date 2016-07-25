@@ -83,6 +83,13 @@ function git_commits_ahead() {
   fi
 }
 
+# Gets the number of commits behind remote
+function git_commits_behind() {
+  if $(command git rev-parse --git-dir > /dev/null 2>&1); then
+    echo $(git rev-list --count HEAD..@{upstream})
+  fi
+}
+
 # Outputs if current branch is ahead of remote
 function git_prompt_ahead() {
   if [[ -n "$(command git rev-list origin/$(git_current_branch)..HEAD 2> /dev/null)" ]]; then
@@ -186,6 +193,18 @@ function git_compare_version() {
     fi
   done
   echo 0
+}
+
+# Outputs the name of the current user
+# Usage example: $(git_current_user_name)
+function git_current_user_name() {
+  command git config user.name 2>/dev/null
+}
+
+# Outputs the email of the current user
+# Usage example: $(git_current_user_email)
+function git_current_user_email() {
+  command git config user.email 2>/dev/null
 }
 
 # This is unlikely to change so make it all statically assigned
