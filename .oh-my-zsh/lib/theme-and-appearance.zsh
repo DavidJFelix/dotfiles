@@ -6,17 +6,19 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 if [[ "$DISABLE_LS_COLORS" != "true" ]]; then
   # Find the option for using colors in ls, depending on the version
-  if [[ "$(uname -s)" == "NetBSD" ]]; then
+  if [[ "$OSTYPE" == netbsd* ]]; then
     # On NetBSD, test if "gls" (GNU ls) is installed (this one supports colors);
     # otherwise, leave ls as is, because NetBSD's ls doesn't support -G
     gls --color -d . &>/dev/null && alias ls='gls --color=tty'
-  elif [[ "$(uname -s)" == "OpenBSD" ]]; then
+  elif [[ "$OSTYPE" == openbsd* ]]; then
     # On OpenBSD, "gls" (ls from GNU coreutils) and "colorls" (ls from base,
     # with color and multibyte support) are available from ports.  "colorls"
     # will be installed on purpose and can't be pulled in by installing
     # coreutils, so prefer it to "gls".
     gls --color -d . &>/dev/null && alias ls='gls --color=tty'
     colorls -G -d . &>/dev/null && alias ls='colorls -G'
+  elif [[ "$OSTYPE" == darwin* ]]; then
+    gls --color -d . &>/dev/null && alias ls='gls --color=tty' || alias ls='ls -G'
   else
     # For GNU ls, we use the default ls color theme. They can later be overwritten by themes.
     if [[ -z "$LS_COLORS" ]]; then
@@ -24,6 +26,9 @@ if [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     fi
 
     ls --color -d . &>/dev/null && alias ls='ls --color=tty' || alias ls='ls -G'
+
+    # Take advantage of $LS_COLORS for completion as well.
+    zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
   fi
 fi
 
