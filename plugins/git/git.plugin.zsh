@@ -44,6 +44,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gapa='git add --patch'
 alias gau='git add --update'
+alias gap='git apply'
 
 alias gb='git branch'
 alias gba='git branch -a'
@@ -106,6 +107,10 @@ alias gga='git gui citool --amend'
 ggf() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
   git push --force origin "${b:=$1}"
+}
+ggfl() {
+[[ "$#" != 1 ]] && local b="$(git_current_branch)"
+git push --force-with-lease origin "${b:=$1}"
 }
 compdef _git ggf=git-checkout
 
@@ -187,6 +192,7 @@ alias gmom='git merge origin/master'
 alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
+alias gma='git merge --abort'
 
 alias gp='git push'
 alias gpd='git push --dry-run'
