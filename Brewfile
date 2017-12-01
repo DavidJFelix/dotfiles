@@ -1,5 +1,4 @@
 tap "caskroom/cask"
-tap "coinbase/assume-role"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "remind101/formulae"
