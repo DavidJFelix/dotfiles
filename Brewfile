@@ -41,7 +41,7 @@ brew "tig"
 brew "vim"
 brew "w3m"
 brew "watchman"
-brew "yarn", link: false
+brew "yarn", args: ["without-node"]
 brew "remind101/formulae/assume-role"
 brew "wallix/awless/awless"
 cask "android-studio"
