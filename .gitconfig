@@ -11,6 +11,6 @@
 [push]
 	default = simple
 
-[includif "gitdir:~/Programming/work"]
+[includeIf "gitdir:~/Programming/work/"]
 	path = ~/Programming/work/.gitconfig
 
