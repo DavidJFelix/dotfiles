@@ -1,6 +1,6 @@
 [user]
 	email = felix.davidj@gmail.com
-	name = David J Felix
+	name = David J. Felix
 [core]
 	editor = vim
 	autocrlf = input
@@ -14,3 +14,8 @@
 [includeIf "gitdir:~/Programming/work/"]
 	path = ~/Programming/work/.gitconfig
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

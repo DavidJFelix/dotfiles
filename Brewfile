@@ -47,6 +47,7 @@ brew "watchman"
 brew "yarn", args: ["without-node"]
 brew "remind101/formulae/assume-role"
 brew "wallix/awless/awless"
+cask "amazon-chime"
 cask "android-studio"
 cask "appcode"
 cask "arduino"
@@ -58,7 +59,9 @@ cask "discord"
 cask "docker"
 cask "dropbox"
 cask "firefox"
-cask "gogland"
+cask "github"
+cask "gitkraken"
+cask "goland"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "hyper"
@@ -78,6 +81,7 @@ cask "robo-3t"
 cask "slack"
 cask "spotify"
 cask "steam"
+cask "teamviewer"
 cask "telegram"
 cask "unity"
 cask "visual-studio-code"
@@ -89,6 +93,7 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Server", id: 883878097
 mas "Xcode", id: 497799835
