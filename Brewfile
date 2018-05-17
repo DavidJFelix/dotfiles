@@ -2,6 +2,7 @@ tap "remind101/formulae"
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "ojford/formulae"
+tap "caskroom/fonts"
 tap "caskroom/versions"
 tap "caskroom/cask"
 tap "wallix/awless"
@@ -97,6 +98,10 @@ cask "visual-studio-code"
 cask "vlc"
 cask "webstorm"
 cask "whatsapp"
+cask "caskroom/fonts/font-arvo"
+cask "caskroom/fonts/font-lato"
+cask "caskroom/fonts/font-roboto"
+mas "Affinity Designer", id: 824171161
 mas "BetterSnapTool", id: 417375580
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
