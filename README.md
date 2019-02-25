@@ -12,7 +12,7 @@ cd ~/
 git init
 git remote add origin https://github.com/davidjfelix/home
 git fetch origin
-git checkout -b master --track origin/master -f
+git checkout -b sh --depth 1 --track origin/master -f
 ```
 
 Which will overwrite any files that exist in this repo and keep any files that do not exist.
