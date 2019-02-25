@@ -55,7 +55,7 @@ brew "tig"
 brew "vim"
 brew "w3m"
 brew "watchman"
-brew "yarn", args: ["without-node"]
+brew "yarn", args: ["ignore-dependencies"]
 brew "zsh"
 brew "ojford/formulae/loginitems"
 brew "remind101/formulae/assume-role"
