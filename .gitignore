@@ -1,6 +1,9 @@
 *
-!/.oh-my-zsh/
-!/.oh-my-zsh/*
+!/.zplugin/
+!/.zplugin/bin/
+!/.zplugin/bin/*
+!/.zplugin/bin/**
+!/.zplugin/bin/**/*
 !/.vim/
 !/.vim/after/
 !/.vim/after/ftplugin/
