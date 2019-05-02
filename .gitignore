@@ -1,5 +1,6 @@
 *
 !/.zplugin/
+!/.zplugin/update.sh
 !/.zplugin/bin/
 !/.zplugin/bin/*
 !/.zplugin/bin/**
