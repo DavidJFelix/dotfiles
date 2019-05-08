@@ -4,6 +4,16 @@ autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin's installer chunk
 
+zplugin snippet OMZ::lib/git.zsh
+zplugin snippet OMZ::plugins/git/git.plugin.zsh
+zplugin cdclear -q
+setopt promptsubst
+zplugin snippet OMZ::lib/prompt_info_functions.zsh
+zplugin snippet OMZ::lib/spectrum.zsh
+zplugin snippet OMZ::lib/theme-and-appearance.zsh
+
+zplugin snippet OMZ::themes/gallois.zsh-theme
+
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 export GOPATH=~/.go
