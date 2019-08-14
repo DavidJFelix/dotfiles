@@ -122,18 +122,18 @@ cask "steam"
 cask "teamviewer"
 cask "telegram"
 cask "transmission"
-cask "unity"
+cask "unity-hub"
 cask "visual-studio-code"
 cask "vlc"
 cask "webstorm"
 cask "whatsapp"
-mas "", id: 409203825
-mas "", id: 937984704
-mas "", id: 408981434
-mas "", id: 409201541
-mas "", id: 682658836
-mas "", id: 409183694
-mas "", id: 823766827
-mas "", id: 497799835
-mas "", id: 824171161
-mas "", id: 417375580
+mas "Affinity Designer", id: 824171161
+mas "Amphetamine", id: 937984704
+mas "BetterSnapTool", id: 417375580
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
