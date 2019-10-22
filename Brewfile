@@ -49,7 +49,6 @@ brew "librsvg"
 brew "links"
 brew "lynx"
 brew "mas"
-brew "mongodb"
 brew "mono"
 brew "most"
 brew "netcat"
@@ -138,8 +137,10 @@ cask "whatsapp"
 mas "Affinity Designer", id: 824171161
 mas "Alfred", id: 405843582
 mas "Amphetamine", id: 937984704
+mas "Be Focused Pro", id: 961632517
 mas "BetterSnapTool", id: 417375580
 mas "Contrast", id: 1254981365
+mas "Focus Matrix", id: 1087284172
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
