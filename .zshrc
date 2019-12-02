@@ -35,6 +35,9 @@ zplugin snippet OMZ::themes/gallois.zsh-theme
 zplugin ice wait'2' lucid
 zplugin snippet https://raw.githubusercontent.com/nvm-sh/nvm/master/nvm.sh
 
+zplugin ice wait lucid
+zplugin snippet $HOME/.cargo/env
+
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 export GOPATH="~/.go"
