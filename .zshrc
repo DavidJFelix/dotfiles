@@ -5,8 +5,30 @@ autoload -Uz _zplugin
 ### End of Zplugin's installer chunk
 
 setopt promptsubst
-zplugin ice wait'!1' lucid
-zplugin snippet https://raw.githubusercontent.com/nvm-sh/nvm/master/nvm.sh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/functions.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/clipboard.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/completion.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/correction.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/directories.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/grep.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/key-bindings.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::lib/misc.zsh
 
 zplugin ice wait lucid
 zplugin snippet OMZ::lib/git.zsh
@@ -29,20 +51,13 @@ zplugin snippet OMZ::lib/prompt_info_functions.zsh
 zplugin ice wait lucid
 zplugin snippet OMZ::lib/spectrum.zsh
 
-zplugin ice wait lucid
-zplugin snippet OMZ::themes/gallois.zsh-theme
-
-zplugin ice wait'2' lucid
-zplugin snippet https://raw.githubusercontent.com/nvm-sh/nvm/master/nvm.sh
-
-zplugin ice wait lucid
-zplugin snippet $HOME/.cargo/env
+# zplugin ice wait lucid
+# zplugin snippet OMZ::themes/gallois.zsh-theme
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 export GOPATH="~/.go"
 export NVM_DIR="$HOME/.nvm"
 
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-#source $HOME/.cargo/env
+source $HOME/.cargo/env
+eval "$(starship init zsh)"
