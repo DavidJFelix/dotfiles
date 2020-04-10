@@ -56,7 +56,7 @@ zplugin snippet OMZ::lib/spectrum.zsh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
-export GOPATH="~/.go"
+export GOPATH="$HOME/.go"
 export NVM_DIR="$HOME/.nvm"
 
 source $HOME/.cargo/env
