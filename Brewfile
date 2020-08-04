@@ -10,10 +10,10 @@ tap "thought-machine/please"
 tap "wallix/awless"
 brew "amazon-ecs-cli"
 brew "aria2"
-brew "python"
 brew "asciinema"
 brew "aws-elasticbeanstalk"
 brew "awscli"
+brew "bazel"
 brew "byobu"
 brew "glib"
 brew "cairo"
@@ -59,6 +59,7 @@ brew "netcat"
 brew "nethogs"
 brew "nmap"
 brew "pulumi"
+brew "python@3.8"
 brew "ripgrep"
 brew "rsync"
 brew "ruby"
@@ -79,7 +80,6 @@ brew "w3m"
 brew "watchman"
 brew "yarn"
 brew "zsh"
-brew "bazelbuild/tap/bazel"
 brew "ojford/formulae/loginitems"
 brew "remind101/formulae/assume-role"
 brew "thought-machine/please/please"
@@ -139,6 +139,7 @@ cask "slack"
 cask "sonic-pi"
 cask "spotify"
 cask "steam"
+cask "streamlabs-obs"
 cask "transmission"
 cask "unity-hub"
 cask "unshaky"
@@ -155,6 +156,7 @@ mas "BetterSnapTool", id: 417375580
 mas "Contrast", id: 1254981365
 mas "Focus Matrix", id: 1087284172
 mas "GarageBand", id: 682658836
+mas "Gifski", id: 1351639930
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
