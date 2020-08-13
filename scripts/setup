@@ -1,3 +1,41 @@
 #! /bin/bash
 
 echo "It worked"
+
+# Set scrolling to "unnatural"
+
+### Settings / General
+# Dark mode
+# Accent blue
+# Highlight blue
+# Sidebar icon medium
+# Auto hide menu off
+# Scroll bars automatically
+# Scroll bar click to next page
+# Default browser Chrome
+# Ask to keep changes off
+# Close windows when quitting on
+# 10 recent items
+# Allow handoff on
+# Use font smoothing on
+
+### Settings / Dock
+# Set dock size pretty small 20/100
+# Turn on dock magnification
+# Set dock magnification 33/100
+# Set dock position left
+# Minimize windows scale effect
+# Prefer tabs always
+# Double click on, zoom
+# Minimize windows into app icon on
+# Automatically hide dock off
+# Show indicators for open applications on
+# Show recent applications off
+
+### Keyboard
+# Show keyboard and emoji viewers in menu bar
+
+### Trackpad
+# Tap to click on
+# Scroll direction natural off
+# App Expose on
