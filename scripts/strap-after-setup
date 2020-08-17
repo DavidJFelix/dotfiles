@@ -5,3 +5,11 @@ chsh -s /usr/local/bin/zsh
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# FIXME: make this only run on OSX
+### Iterm2
+# Setup to use "~/.iterm2" as a settings folder
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm2"
+# Turn on the setting to use custom settings folder
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
