@@ -82,6 +82,12 @@ done
 # Show indicators for open applications on
 # Show recent applications off
 
+### Settings / Date and time
+# Force a digital clock on the menu bar
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+# Set clock format to verbose date time without seconds
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM h:mm a"
+
 ### Keyboard
 # Show keyboard and emoji viewers in menu bar
 
