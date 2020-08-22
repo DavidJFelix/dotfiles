@@ -56,8 +56,11 @@ done
 
 ### Settings / General
 # Dark mode
-# Accent blue
-# Highlight blue
+defaults write -g "AppleInterfaceStyle" "Dark"
+# Accent blue -- since this is default we clear any entry
+defaults delete -g "AppleAccentColor"
+# Highlight blue -- since this is default we clear any entry
+defaults delete -g "AppleHighlightColor"
 # Sidebar icon medium
 # Auto hide menu off
 # Scroll bars automatically
