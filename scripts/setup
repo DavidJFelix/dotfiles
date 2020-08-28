@@ -91,6 +91,11 @@ defaults write com.apple.menuextra.clock IsAnalog -bool false
 # Set clock format to verbose date time without seconds
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM h:mm a"
 
+### Settings / Power
+# Make power indicator show percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
+# killall SystemUIServer
+
 ### Keyboard
 # Show keyboard and emoji viewers in menu bar
 
@@ -98,3 +103,6 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM h:mm a"
 # Tap to click on
 # Scroll direction natural off
 # App Expose on
+
+# Do all the killall last
+killall SystemUIServer
