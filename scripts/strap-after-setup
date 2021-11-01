@@ -6,6 +6,9 @@ chsh -s /usr/local/bin/zsh
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Install ASDF plugins
+asdf plugin add nodejs
+asdf plugin add python
 
 # FIXME: make this only run on OSX
 ### Iterm2
